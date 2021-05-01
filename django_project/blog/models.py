@@ -9,3 +9,6 @@ class Post(models.Model):  # inherits from models.Model
     date_posted = models.DateTimeField(default=timezone.now)  # can never be updated if auto_now_add=True
     last_modified = models.DateTimeField(auto_now=True)
     author = models.ForeignKey(User, on_delete=models.CASCADE)  # if a user is deleted, all of its posts are deleted
+
+    def __str__(self):
+        return self.title
