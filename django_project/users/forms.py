@@ -23,4 +23,4 @@ class UserUpdateForm(forms.ModelForm):  # Called a model form because it interac
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
-        field = ['image']
+        fields = ['image']
