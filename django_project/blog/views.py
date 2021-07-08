@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 from .models import Post
 
 
@@ -16,6 +16,10 @@ class PostListView(ListView):
     # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']  # minus sign changes it to newest to oldest from oldest to newest
+
+
+class PostDetailView(DetailView):
+    model = Post
 
 
 def about(request):
