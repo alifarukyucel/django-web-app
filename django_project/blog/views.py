@@ -13,8 +13,9 @@ def home(request):
 class PostListView(ListView):
     model = Post
     template_name = 'blog/home.html'
-    context_object_name = 'posts'
     # <app>/<model>_<viewtype>.html
+    context_object_name = 'posts'
+    ordering = ['-date_posted']  # minus sign changes it to newest to oldest from oldest to newest
 
 
 def about(request):
