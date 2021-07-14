@@ -23,6 +23,7 @@ class PostListView(ListView):
     # <app>/<model>_<viewtype>.html
     context_object_name = 'posts'
     ordering = ['-date_posted']  # minus sign changes it to newest to oldest from oldest to newest
+    paginate_by = 2
 
 
 class PostDetailView(DetailView):
