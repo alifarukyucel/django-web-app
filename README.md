@@ -13,3 +13,5 @@ A Django-based CRUD web application, specifically, a blog.
 2. Run: `pip install -r requirements.txt`
 3. Navigate into the folder "django_project" by running the command: `cd django_project`
 4. Run: `py manage.py runserver`
+
+The server should be hosted on port 8000, so just type in localhost:8000 into your browser.
