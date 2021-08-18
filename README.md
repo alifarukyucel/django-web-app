@@ -1,4 +1,4 @@
-# Django Blog
+﻿# Description
 A Django-based CRUD web application, specifically, a blog.
 # Features
 - Auth (Login, Logout, Email, Password (encrypted))
@@ -8,3 +8,8 @@ A Django-based CRUD web application, specifically, a blog.
 - Templates (Using default template engine for django)
 - Pagination
 - Password Reset
+# How to Run
+1. Create and activate a python virtual environment
+2. Run: `pip install -r requirements.txt`
+3. Navigate into the folder "django_project" by running the command: `cd django_project`
+4. Run: `py manage.py runserver`
